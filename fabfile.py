@@ -3,9 +3,8 @@
 from datetime import datetime
 from fabric.api import local
 import os
-from invoke import task
 
-@task
+
 def do_pack():
     try:
         if not os.path.exists("versions"):
